@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>catalog.ejs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bababa;}
+.s3 { color: #a5c261;}
+.s4 { color: #6a8759;}
+.s5 { color: #cc7832;}
+.s6 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+catalog.ejs</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">Title</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">type</span><span class="s3">=&quot;text/css&quot;   </span><span class="s2">href</span><span class="s3">=&quot;/css/catalog.css&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://unpkg.com/aos@next/dist/aos.css&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Roboto:wght@300&amp;display=swap&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;style.css&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://use.fontawesome.com/releases/v5.15.4/css/all.css&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js&quot; </span><span class="s2">integrity</span><span class="s3">=&quot;sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF&quot; </span><span class="s2">crossorigin</span><span class="s3">=&quot;anonymous&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+    <span class="s0">&lt;header&gt;</span>
+        <span class="s0">&lt;ul&gt;</span>
+            <span class="s0">&lt;li&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;/&quot; </span><span class="s0">&gt;</span><span class="s1">Koreana</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="s0">&lt;li&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;home&quot;</span><span class="s0">&gt; </span><span class="s1">The Hit </span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="s0">&lt;li&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;catalog&quot;</span><span class="s0">&gt; </span><span class="s1">Catalog </span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="s0">&lt;li&gt;&lt;a </span><span class="s2">href</span><span class="s3">=&quot;authorization.ejs&quot;</span><span class="s0">&gt; </span><span class="s1">Private page</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="s0">&lt;/ul&gt;</span>
+    <span class="s0">&lt;/header&gt;</span>
+    <span class="s0">&lt;script </span><span class="s2">type</span><span class="s3">=&quot;text/javascript&quot;</span><span class="s0">&gt;</span>
+        <span class="s1">window.addEventListener(</span><span class="s4">&quot;scroll&quot;</span><span class="s5">, function </span><span class="s1">(){</span>
+            <span class="s5">var </span><span class="s1">header = document.querySelector(</span><span class="s4">&quot;header&quot;</span><span class="s1">)</span><span class="s5">;</span>
+            <span class="s1">header.classList.toggle(</span><span class="s4">&quot;sticky&quot;</span><span class="s5">, </span><span class="s1">window.scrollY &gt; </span><span class="s6">0</span><span class="s1">)</span><span class="s5">;</span>
+        <span class="s1">})</span>
+    <span class="s0">&lt;/script&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;parallax&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+  <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;main_category&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;cards&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;card&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;h1 </span><span class="s2">class</span><span class="s3">=&quot;title&quot;</span><span class="s0">&gt;</span><span class="s1">title</span><span class="s0">&lt;/h1&gt;</span>
+            <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;/photo/HERA_Make_Up_Fixer.webp&quot; </span><span class="s2">alt</span><span class="s3">=&quot;&quot;</span>
+            <span class="s2">class</span><span class="s3">=&quot;images&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;category&quot;</span><span class="s0">&gt;</span><span class="s1">category</span><span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;p </span><span class="s2">class</span><span class="s3">=&quot;price&quot;</span><span class="s0">&gt;</span><span class="s1">price</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+
+
+    <span class="s0">&lt;/div&gt;</span>
+  <span class="s0">&lt;/div&gt;</span>
+
+
+
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span></pre>
+</body>
+</html>

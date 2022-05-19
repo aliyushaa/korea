@@ -1,0 +1,195 @@
+
+header{
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+header ul li{
+    position: relative;
+    list-style: none;
+
+}
+header ul li a{
+
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #000000;
+}
+header.sticky ul li a{
+    color: #000000;
+}
+body{
+    margin: 0;
+    min-height: 200vh;
+}
+a{
+    color: #d4af37 !important;
+    font-size: 25px !important;
+    text-align: center !important;
+    font-family: 'Bebas Neue', cursive !important;
+}
+
+.parallax {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("../../photo/hera_jennie.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.link_tomenu {
+    position: absolute;
+    right:20%;
+    top:70%;
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.caption{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    left:8%;
+    top:50%;
+    transform: translateY(-50%);
+    color:#000;
+
+}
+.parallax_2 {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("../../photo/cosmetics_hera.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption a{
+    text-decoration:none;
+}
+.caption a:hover {
+    color:#fff;
+}
+.caption{
+    position:absolute;
+    right:20%;
+    top:50%;
+    transform: translateY(-50%);
+    color:#fff;
+
+}
+.text_main{
+    padding-bottom: 40px;
+    margin-right: auto;
+}
+.main_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+
+}
+.text_1{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 200px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+.main_page2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+.photo_1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 200px;
+    width: 100%;
+    font-size: 55px;
+    font-weight: 600;
+    color: black;
+}
+.photo_2{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    font-size: 55px;
+    font-weight: 600;
+    color: black;
+}
+.main_page3{
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1150px;
+    padding-top: 100px;
+}
+
+#bottom_bar {
+    width: 100%;
+    height: 160px;
+    background-color: #000000;
+}
+#main_container {
+    height: 90px;
+    width: 900px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+#bottom_lower {
+    width: 600px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+#header_lower_title {
+    font-size: 35px;
+    color: aliceblue;
+    width: 500px;
+
+}
+
+#header_lower_content {
+    font-size: 12px;
+    color: aliceblue;
+    width: 500px;
+}

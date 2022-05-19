@@ -1,0 +1,91 @@
+header{
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+header ul li{
+    position: relative;
+    list-style: none;
+
+}
+header ul li a{
+
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #000000;
+}
+header.sticky ul li a{
+    color: #000000;
+}
+body{
+    margin: 0;
+    min-height: 200vh;
+}
+a{
+    color: #d4af37 !important;
+    font-size: 25px !important;
+    text-align: center !important;
+    font-family: 'Bebas Neue', cursive !important;
+}
+.parallax {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("../../photo/cosmetica_parallax1.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_category{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ #cards{
+    display: flex;
+    justify-content: space-between;
+     flex-wrap: wrap;
+ }
+ .card{
+     width: 23%;
+     box-shadow: 0 0 4px gray;
+     text-align: center;
+     padding: 1.5rem;
+     margin-bottom: 2rem;
+ }
+ .title{
+     font-size: 1.3rem;
+ }
+ .category, .price{
+     font-weight: bold;
+     text-transform: capitalize;
+     margin:1rem;
+      font-size: 1.2rem;
+ }
+.images{
+    width: 80%;
+}
